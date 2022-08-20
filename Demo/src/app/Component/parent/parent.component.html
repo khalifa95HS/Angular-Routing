@@ -1,0 +1,27 @@
+<div class="card" style="width: 50%; margin-left: 20%">
+  <div class="card-header" style="background-color: blue">Parent Component</div>
+  <div class="card-body">
+    <h5 class="card-title">Parent</h5>
+    <p class="card-text">this is the parent component</p>
+    <div>
+      <li class="nav-item">
+        <a class="btn btn-outline-success" [routerLink]="['/parent/child']"
+          >Child
+        </a>
+      </li>
+
+      <li class="nav-item ml-4">
+        <a class="btn btn-outline-success" [routerLink]="['/parent/childa']"
+          >Child A</a
+        >
+      </li>
+      <li class="nav-item ml-4">
+        <a class="btn btn-outline-success" [routerLink]="['/parent/childb']"
+          >Child B</a
+        >
+      </li>
+    </div>
+  </div>
+</div>
+<hr />
+<router-outlet></router-outlet>
